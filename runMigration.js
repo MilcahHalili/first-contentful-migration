@@ -1,8 +1,8 @@
 const { runMigration } = require('contentful-migration')
-const migrateMeditations = require('migrateMeditations')
+const migrateMeditation = require('migrateMeditations')
 
 const options = {
-  migrateMeditations,
+  migrateMeditation,
   spaceId: '<space-id>',
   accessToken: '<access-token>'
 }

@@ -1,10 +1,12 @@
+require('dotenv').config()
 const { runMigration } = require('contentful-migration')
 const migrateMeditation = require('migrateMeditations')
 
 const options = {
   migrateMeditation,
-  spaceId: '<space-id>',
-  accessToken: '<access-token>'
+  spaceId: process.env.SPACE_ID,
+  accessToken: process.env.ACCESS_TOKEN,
+  environmentId: process.env.ENVIRONMENT_ID
 }
 
 runMigration(options)

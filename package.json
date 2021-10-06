@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "contentful-migration": "^4.5.7"
+    "contentful-migration": "^4.5.7",
+    "dotenv": "^10.0.0"
   }
 }

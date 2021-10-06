@@ -1,7 +1,7 @@
-const createMeditation = (migration, context) => {
+const createMeditation = (migration) => {
   const meditation = migration.editContentType('meditation')
-    .name('Meditation')
-    .editField('type').type('Symbol').name('Type')
+    .editField('type')
+      .name('type')
 }
 
 module.exports = createMeditation
